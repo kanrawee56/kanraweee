@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>kanraweeeeeeeeeeee</title>
+  <style>
+    body {
+      background-color: #f0ecec;
+      color: #4a4747;
+      font-family: 'Prompt', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    #message {
+      margin: 20px auto;
+      font-size: 1.2em;
+      max-width: 500px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #252424;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>เวียร์เองแค่อยากบอก</h1>
+  <div id="message">กดด้านล่าง</div>
+  <button onclick="sendMessage()">กดนี่</button>
+    <br><br>
+  <a href="https://youtu.be/2p_3TRl4jcs?si=2S2H4Kj6js0zdCcM" target="_blank">
+    <button>ถ้าว่างก็อยากให้ฟัง</button>
+  </a>
+
+
+
+  <script>
+    const thoughts = [
+      "เป็นยังไงบ้าง สบายดีปะ ดูแลตัวเองบ้างมั้ย รักตัวเองบ้างมั้ย",
+      "ใจนึงก้อยากให้กลับมาเป็นเหมือนเดิมมากๆแต่คิดว่าเธอคงลืมเราไปแล้วที่ผ่านมาคืออยากบอกว่าที่ผ่านมาขอบตุณมากนะ",
+      "❤️",
+      "ไม่ได้มีไรมากแค่อยากถาม",
+      "เคยคิดถึงกันบ้างมั้ย",
+      "ดูแลตัวเองดีๆนะ เป็นห่วงมาก",
+      "อย่าโกรธกันเลยนะ",
+      "เห็นมั้ยไม่มีไรมากจริงๆ",
+      "หมดแล้วววววววว",
+    ];
+  let index = 0;
+
+  function sendMessage() {
+    document.getElementById('message').innerText = thoughts[index];
+    index++;
+    if (index >= thoughts.length) {
+      index = 0; 
+    }
+  }
+  </script>
+</body>
+</html>
